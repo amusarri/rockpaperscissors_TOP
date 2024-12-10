@@ -73,8 +73,8 @@
             var humanScore = 0 
             var compScore = 0
             for (let i = 0; i < 5; i++) {
-                var humanSelection = getHumanChoice();
-                var compSelection = getComputerChoice();
+                let humanSelection = getHumanChoice();
+                let compSelection = getComputerChoice();
                 playRound(humanSelection, compSelection);
                 console.log(`You:${humanScore}, Computer:${compScore}`)
             }
