@@ -70,11 +70,10 @@
                 console.log("It's a tie!");
             } 
             
-            console.log(`You:${humanScore} Computer:${compScore}`);
         }
 
-        const humanSelection = getHumanChoice();
-        const compSelection = getComputerChoice();
+        var humanSelection = getHumanChoice();
+        var compSelection = getComputerChoice();
         
         //Play game (Best of 5)
         function playGame() {
@@ -83,7 +82,7 @@
                 console.log(`You:${humanScore}, Computer:${compScore}`)
             }
         }
-        playGame()
+        playGame();
     </script>
 </body>
 </html>
