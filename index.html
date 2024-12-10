@@ -65,7 +65,7 @@
                 compScore += 1;
             } else if(humanSelection === "scissors" && compSelection === "paper") {
                 console.log("You Win! Scissors beats paper");
-                compScore += 1; 
+                humanScore += 1; 
             } else {
                 console.log("It's a tie!");
             } 
@@ -81,7 +81,7 @@
         function playGame() {
             for (let i = 0; i < 5; i++) {
                 playRound(humanSelection, compSelection);
-                
+                console.log(`You:${humanScore} Computer:${compScore}`)
             }
 
         }
