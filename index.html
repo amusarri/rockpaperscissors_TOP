@@ -44,6 +44,11 @@
 
         //Play round
         function playRound(humanChoice, computerChoice) {
+            var humanSelection = getHumanChoice();
+            var compSelection = getComputerChoice();
+            var humanScore = 0 
+            var compScore = 0
+
             if (humanSelection === "rock" && compSelection === "paper") {
                 console.log("You lose! Rock loses to paper");
                 compScore += 1; 
@@ -72,8 +77,6 @@
 
         //Play game (Best of 5)
         function playGame() {
-            var humanScore = 0 
-            var compScore = 0
             for (let i = 0; i < 5; i++) {
                 playRound(humanSelection, compSelection);
                 console.log(`You:${humanScore}, Computer:${compScore}`)
