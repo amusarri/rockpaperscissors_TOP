@@ -75,8 +75,6 @@
 
         const humanSelection = getHumanChoice();
         const compSelection = getComputerChoice();
-
-        playRound(humanSelection, compSelection)
         
         //Play game (Best of 5)
         function playGame() {
@@ -84,9 +82,8 @@
                 playRound(humanSelection, compSelection);
                 console.log(`You:${humanScore}, Computer:${compScore}`)
             }
-
         }
-
+        playGame()
     </script>
 </body>
 </html>
