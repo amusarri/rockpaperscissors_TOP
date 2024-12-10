@@ -16,8 +16,11 @@
                     console.log('You chose Paper') }
             else if (choice.toLowerCase() === 'scissors') {
                     console.log('You chose Scissors') }
-        
-        } 
+            else {
+                alert('Please choose again')
+                let choice = prompt("Choose rock, paper or scissors")
+            }
+            }
         getHumanChoice()
 
         function getComputerChoice() {
