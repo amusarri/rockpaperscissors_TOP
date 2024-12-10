@@ -42,14 +42,14 @@
             }
         }
 
-        //Play game (Best of 5)
+        //Play game
         function playGame() {
-            var humanSelection = getHumanChoice();
-            var compSelection = getComputerChoice();
             var humanScore = 0 
             var compScore = 0
 
             for (let i = 0; i < 5; i++) {
+                var humanSelection = getHumanChoice();
+                var compSelection = getComputerChoice();
                 playRound(humanSelection, compSelection);
                 console.log(`You:${humanScore}, Computer:${compScore}`)
             }  
@@ -77,7 +77,7 @@
                 console.log("It's a tie!"); }
             }
         }
-        
+
         playGame();
     </script>
 </body>
