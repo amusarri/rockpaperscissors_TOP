@@ -11,17 +11,17 @@
         function getHumanChoice() {
             let choice = prompt("Choose rock, paper or scissors")
             
-            if (choice === "rock") {
-                return("rock")    
-                console.log("You chose Rock") }
+            if (choice === "rock") {   
+                console.log("You chose Rock")
+                return("rock")  }
             else if (choice.toLowerCase() === 'paper') {
                 return("paper")    
-                console.log('You chose Paper') }
+                console.log("You chose Paper") }
             else if (choice.toLowerCase() === 'scissors') {
                 return("scissors")    
-                console.log('You chose Scissors') }
+                console.log("You chose Scissors") }
             else {
-                alert('Please choose again')
+                alert("Please choose again")
                 let choice = prompt("Choose rock, paper or scissors")
             }
             }
@@ -33,12 +33,12 @@
         
             if (randomNumber >= 0 && randomNumber <= 33) {
                 return("rock");
-                console.log('Computer chose Rock'); 
+                console.log("Computer chose Rock"); 
             } else if (randomNumber >= 34 && randomNumber <= 66) {
                 return("paper");
-                console.log('Computer chose Paper') 
+                console.log("Computer chose Paper") 
             } else {return("scissors");
-                console.log('Computer chose Scissors')
+                console.log("Computer chose Scissors")
             }
         }
         getComputerChoice()
