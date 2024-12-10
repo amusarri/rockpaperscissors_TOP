@@ -76,6 +76,16 @@
             } else {
                 console.log("It's a tie!"); }
             }
+       
+            function winner() {
+                if (humanScore > compScore) {
+                    console.log("Congratulations! You are the winner.");
+                } else if (compScore > humanScore) {
+                    console.log("UnSlucky! You have lost.");
+                } else {
+                    console.log("You have drawn.");
+                }
+            }
         }
 
         playGame();
