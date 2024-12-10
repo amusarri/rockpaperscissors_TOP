@@ -44,6 +44,9 @@
 
         //Play round
         function playRound(humanChoice, computerChoice) {
+            let humanSelection = getHumanChoice();
+            let compSelection = getComputerChoice();
+
             if (humanSelection === "rock" && compSelection === "paper") {
                 console.log("You lose! Rock loses to paper");
                 compScore += 1; 
@@ -73,8 +76,6 @@
             var humanScore = 0 
             var compScore = 0
             for (let i = 0; i < 5; i++) {
-                let humanSelection = getHumanChoice();
-                let compSelection = getComputerChoice();
                 playRound(humanSelection, compSelection);
                 console.log(`You:${humanScore}, Computer:${compScore}`)
             }
